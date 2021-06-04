@@ -82,6 +82,14 @@
 .imagen {
   width: 100%;
 }
+.logo-navbar {
+  color: white;
+  padding: 12pt;
+  font-family: 'Old Standard TT', serif;
+  font-weight: bold;
+  font-size: 12pt;
+  background-color: black;
+}
 
 @media (min-width: 1001px) {
   .main {
