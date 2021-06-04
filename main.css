@@ -1,0 +1,152 @@
+/*!
+ * Bootstrap v5.0.1 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+@import "assets/dist/css/bootstrap.css";
+
+/*# sourceMappingURL=main.css.map */
+
+.main {
+  font-size:small;
+  color: white;
+  margin: 0 auto;
+
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 0px
+    300px
+    1fr
+    1fr
+    100px;
+  grid-template-areas:
+    "my-header my-header my-header"
+    "my-aside my-aside my-aside"
+    "my-section my-section my-section"
+        "my-footer my-footer my-footer"
+}
+
+.header {
+  grid-area: my-header;
+  background-color: white;
+}
+
+.aside {
+  grid-area: my-aside;
+  background-color: white;
+}
+
+.section {
+  grid-area: my-section;
+  background-color: white;
+  color: black;
+  padding: 20pt;
+}
+
+.footer {
+  grid-area: my-footer;
+  background-color: black;
+  padding: 10pt;
+  justify-content: space-between;
+}
+.suscribir {
+  color: black;
+  background-color: white;
+  writing-mode: vertical-rl;
+  padding: 10pt;
+  position: relative;
+  font-family: 'Old Standard TT', serif;
+  font-weight: bold;
+  font-size: 20pt;
+}
+.titulo {
+  font-family: 'Old Standard TT', serif;
+  font-weight: bold;
+  font-size: 20pt;
+}
+.contenido {
+  font-family: 'Old Standard TT', serif;
+  font-size: 10pt;
+}
+.newsletter {
+  font-family: 'Old Standard TT', serif;
+  font-weight: bold;
+  font-size: 20pt;
+}
+.correo {
+  font-family: 'Old Standard TT', serif;
+  font-size: 10pt;
+}
+.imagen {
+  width: 100%;
+}
+
+@media (min-width: 1001px) {
+  .main {
+      grid-template-columns: 0.5fr 0.2fr 1fr;
+    grid-template-rows: 0fr
+      1.5fr
+      1fr;
+    grid-template-areas:
+      "my-header my-header my-header"
+      "my-section my-section my-aside"
+      "my-footer my-footer my-aside"
+  }
+  .titulo {
+    font-size: 50pt;
+  }
+  .section {
+    padding: 50pt;
+  }
+  .contenido {
+    font-size: 20pt;
+  }
+  .newsletter {
+    font-size: 30pt;
+  }
+  .correo {
+    font-size: 15pt;
+  }
+}
+
+//*@media (min-width 800px) {
+.container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template: 25px 1fr 1fr 100px / 100%;
+  grid-template-areas: "header" "main" "picture" "footer";
+ }
+}
+
+@media (min-width: 536px){
+  .container {
+
+    grid-template: 25px 1fr 1fr 100px / 1fr 1fr;
+    grid-template-areas: "header" "header" "picture main" "footer footer";
+  }
+}
+
+.header {
+  grid-area: header;
+  background-color: black;
+  padding: 5pt;
+}
+.main {
+  background-color: blue;
+  color: black;
+  grid-area: main;
+  padding: 25pt;
+}
+.picture {
+  grid-area: picture;
+  background-color: red;
+}
+.footer {
+  grid-area: footer;
+  color: #fff;
+  background-color: black;
+  padding: 10pt;
+}
